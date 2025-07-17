@@ -1,1 +1,260 @@
 
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pari Travels</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    }
+    .header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header nav a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      height: 90vh;
+      background: url('images/bg.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero-content .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #28a745;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+    .about, .gallery, .booking, .contact {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form button {
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    form button {
+      background: #25d366;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      font-size: 30px;
+      padding: 12px 16px;
+      border-radius: 50%;
+      z-index: 999;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f1f1f1;
+    }
+  
+body {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 1rem;
+}
+nav a {
+  font-size: 1rem;
+}
+form input, form button {
+  font-size: 1rem;
+}
+
+.section-box {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffffdd;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.call-float {
+  position: fixed;
+  bottom: 90px;
+  left: 20px;
+  background: #007bff;
+  color: white;
+  font-size: 28px;
+  padding: 12px 16px;
+  border-radius: 50%;
+  z-index: 999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.whatsapp-float, .call-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+.whatsapp-float {
+  right: 20px;
+}
+.call-float {
+  left: 20px;
+  background-color: #007bff;
+}
+.whatsapp-float:hover, .call-float:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/></head>
+<body style="background: #e0f7fa; margin: 0; font-family: 'Segoe UI', Roboto, sans-serif;">
+<header class="header" style="background-color: #00796b; color: white; padding: 20px 10px; text-align: center;">
+<h1 style="font-size: 2em; font-weight: bold;">Pari Travels</h1>
+<nav>
+<a href="#about">About</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<div class="section-box" style="background-color: white; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; margin: 20px auto; max-width: 90%;"><section class="hero" id="home">
+<div class="hero-content" data-aos="fade-up">
+<h2>Your Journey Begins Here</h2>
+<a class="btn review-btn" href="https://g.page/r/Cb-b0CxkFLRIEBE/review" target="_blank">🌟 Google Review</a>
+<a class="btn book-btn" href="#book">📅 Book Now</a>
+</div>
+</section></div>
+<div class="section-box" style="background-color: white; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; margin: 20px auto; max-width: 90%;"><section class="about" data-aos="fade-right" id="about">
+<h2>About Us</h2>
+<p><strong>Pari Travels</strong> is a trusted travel service based near <strong>Toran Dwar, Khatu Shyamji</strong>. We offer well-maintained vehicles ranging from <strong>10 to 26 seaters</strong> for both local and long-distance travel. With our <strong>experienced drivers</strong> and commitment to <strong>reliable service</strong>, we ensure every journey is <strong>safe</strong>, <strong>comfortable</strong>, and <strong>on time</strong>.</p>
+</section></div>
+<div class="section-box" style="background-color: white; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; margin: 20px auto; max-width: 90%;"><section class="services" data-aos="fade-up">
+<h2>Our Services</h2>
+<p>We provide rental vehicles from <strong>10-seater to 26-seater</strong> including:</p>
+<ul style="list-style: none; padding-left: 0;">
+<li>🚐 Force Traveller</li>
+<li>🚙 Mahindra Safari</li>
+<li>🚐 Force Tufan</li>
+</ul>
+<p>Available at <strong>Toran Dwar, Khatushyamji</strong></p>
+</section></div>
+<div class="section-box" style="background-color: white; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; margin: 20px auto; max-width: 90%;"><section class="gallery" data-aos="fade-up" id="gallery">
+<h2>Our Vehicles</h2>
+<div class="gallery-grid">
+<img alt="Vehicle 1" src="images/car1.jpg"/>
+<img alt="Vehicle 2" src="images/car2.jpg"/>
+<img alt="Vehicle 3" src="images/car3.jpg"/>
+<img alt="Vehicle 4" src="images/car4.jpg"/>
+</div>
+</section></div>
+<div class="section-box" style="background-color: white; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; margin: 20px auto; max-width: 90%;"><section class="booking" data-aos="fade-left" id="book">
+<h2>Book Your Ride</h2>
+<form id="bookingForm">
+<input id="name" placeholder="Your Name" required="" type="text"/>
+<input id="pickup" placeholder="Pickup Location" required="" type="text"/>
+<input id="drop" placeholder="Drop Location" required="" type="text"/>
+<input id="date" required="" type="date"/>
+<button type="submit">Book Now on WhatsApp</button>
+</form>
+</section></div>
+<div class="section-box" style="background-color: white; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 20px; margin: 20px auto; max-width: 90%;"><section class="contact" data-aos="fade-in" id="contact">
+<h2>Contact &amp; Location</h2>
+<p><i class="fas fa-phone" style="margin-right: 8px;"></i> 📞 <a href="tel:+919660693159">+91 96606 93159</a></p>
+<p><i class="fab fa-instagram" style="margin-right: 8px;"></i> 📷 <a href="https://instagram.com/pari_trevel_agency" target="_blank">@pari_trevel_agency</a></p>
+<p><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> 📍 <a href="https://maps.app.goo.gl/ujZn3z1t5s7xn72E9" target="_blank">Find us here</a></p>
+<h2>Contact &amp; Location</h2>
+<p><i class="fas fa-phone"></i> 📞 <a href="tel:+919660693159">+91 96606 93159</a></p>
+<p><i class="fas fa-map-marker-alt"></i> 📍 Khatushyamji, Rajasthan</p>
+<iframe allowfullscreen="" height="300" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.048417754061!2d75.39811951503413!3d27.78915848277754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d49ee3271a029%3A0x8db126bc0d69aab1!2sKhatushyamji%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" style="border:0;" width="100%"></iframe>
+</section></div>
+<a class="whatsapp-float" href="https://wa.me/919660693159" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<footer>
+<p>© 2025 Pari Travels | All rights reserved.</p>
+</footer>
+<script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value;
+      const pickup = document.getElementById('pickup').value;
+      const drop = document.getElementById('drop').value;
+      const date = document.getElementById('date').value;
+
+      const message = `Name: ${name}%0APickup: ${pickup}%0ADrop: ${drop}%0ADate: ${date}`;
+      window.open(`https://wa.me/919660693159?text=${message}`, '_blank');
+    });
+  </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<a class="call-float" href="tel:+919660693159" title="Call Now"><i class="fas fa-phone"></i></a></body>
+</html>
